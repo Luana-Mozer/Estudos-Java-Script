@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Exercício Idades</title>
+</head>
+<body>
+
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                Ano de nascimento: <input type="number" id="text" min="0" max="200">
+            </p>
+            <p>
+                Sexo: <input type="radio" name="sex" id="mas" checked>
+                        <label for="sex">Masculino</label>
+                      <input type="radio" name="sex" id="fem">
+                        <label for="sex">Feminino</label>
+            </p>
+            <p>
+                <input id="aperta" type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+           Preencha os dados e veja o resultado
+           <img id="foto" src="">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Luana Mozer.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+background-color: rgb(206, 48, 129);
+font: normal 15PT Arial;
+height: auto;
+margin: auto;
+width: auto;
+}
+header {
+color: white;
+text-align: center;
+font-style: italic;
+}
+section {
+background-color: white;
+border-radius: 10px;
+padding: 15px;
+width: 350px;
+margin: auto;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+}
+#aperta {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.239);
+    color: brown;
+    box-shadow: rgba(0, 0, 0, 0.434) 5px 5px 10px;
+}
+img {
+width: 150px;
+}
+div {
+text-align: center;
+padding: 10PX;
+}
+footer {
+color: white;
+text-align: center;
+font-style: italic;
+}
