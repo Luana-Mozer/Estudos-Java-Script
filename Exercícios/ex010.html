@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        #velocidade {
+            width: 50px;
+            background-color: beige;
+            border: 1px solid black
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: brown;
+        }
+        button {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: white;
+            background-color: brown;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    <p>Velocidade do carro:<input type="number" id="velocidade"> km/h</p>
+    <p><button onclick="calcular()">Verificar</button></p>
+    <script>
+        var velocidade = document.getElementById("velocidade");
+        function calcular() {
+            if (velocidade.value > 80) {
+                alert("Multa de R$ 500,00");
+            } else {
+                alert("Velocidade dentro do limite permitido.");
+            }
+        }
+    </script>
+</body>
+</html>

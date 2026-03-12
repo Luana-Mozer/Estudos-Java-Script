@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(178, 133, 219);
+            color: white;
+            font: normal 20px Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt("Digite um número: ")); // convertendo a string para número real
+        var n2 = Number.parseInt(window.prompt("Digite outro número: ")); // convertendo a string para número inteiro
+        var soma = n1 + n2;
+        window.alert(`A soma dos dois números ${n1} + ${n2} é: ${soma}`); // usando template string para exibir o resultado da soma dos dois números
+    </script>
+</body>
+</html>

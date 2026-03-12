@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De onde você é?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="Box">
+             <h1>Queremos saber se você é brasileiro..</h1>
+             <p>De onde você é? <input type="text" id="pais"></p>
+            <p><button onclick="analisar()">Verificar</button></p>
+        </div>
+    </div>
+   
+    <script>
+        var pais = document.getElementById('pais')
+        function analisar() {
+            if (pais.value == "Brasil" || pais.value == "brasil" || pais.value == "BRASIL") {
+                alert('Brasileiro')
+            }else {
+                alert('Estrangeiro')
+            }
+            
+        }
+    </script>
+</body>
+</html>
