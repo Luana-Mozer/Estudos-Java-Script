@@ -1,13 +1,17 @@
 function calcular(){
- let n = document.querySelector("#num").value
+ let num = document.querySelector("#num").value
+ let n = Number(num)
  let res = document.querySelector("#taboada")
  
 
-if (n == Number(0) || n === ""){
+if (num.value.length == 0){
     alert("Não existe tabuada de 0")
-} switch (true){
-    case n == Number(1):
-        res.textContent(`${taboada1}`)
-        break;
-}1
+} else {
+    res.innerHTML = '' // Limpa a tabuada anterior
+    for (let c = 1; c <= 10; c++){
+      let item = document.createElement('option')
+      item.text = `${n} x ${c} = ${n*c}`
+      res.appendChild(item)
+    } 
+}
 }
