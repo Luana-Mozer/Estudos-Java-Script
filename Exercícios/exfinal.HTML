@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="final.css">
+    <title>Exercício Final</title>
+</head>
+<body>
+    <header>
+        <h1>Analisador de números</h1>
+    </header>
+    <section>
+        <div>
+            <p>Números entre ( 1 - 100 ): <input type="number" id="num" min="0" max="100"><input type="button" value="Adcionar" id="add" onclick="adicionar()"></p>
+        </div>
+        <div>
+            <select name="seletor" id="sel"></select>
+        </div>
+        <div>
+             <p id="relatorio">Texto</p>
+        </div>
+        <input type="button" value="Resolver" class="botton" onclick="resolver()">
+    </section>
+    <footer>
+        <p> &copy; Luana Mozer</p>
+    </footer>
+    <script src="final.js"></script>
+</body>
+</html>
